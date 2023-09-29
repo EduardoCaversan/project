@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box; /* Certifique-se de que padding e border não afetem a largura total */
+}
+
+.footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%; /* Para garantir que o conteúdo do rodapé seja 100% de largura */
+    box-sizing: border-box; /* Certifique-se de que padding e border não afetem a largura total */
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        padding: 0 20px; /* Adapte o preenchimento conforme necessário para tamanhos de tela menores */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-content {
+        padding: 0 10px; /* Altere o preenchimento conforme necessário para tamanhos de tela ainda menores */
+    }
+}
