@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 
 .content {
@@ -16,7 +15,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    box-sizing: border-box; /* Certifique-se de que padding e border não afetem a largura total */
+    box-sizing: border-box; 
 }
 
 .footer-content {
