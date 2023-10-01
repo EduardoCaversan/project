@@ -3,36 +3,30 @@ body {
     padding: 0;
 }
 
-.content {
-    padding: 20px;
-}
-
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    height: 60px;
 }
 
 .footer-content {
     max-width: 960px;
-    margin: 0 auto;
-    width: 100%; /* Para garantir que o conteúdo do rodapé seja 100% de largura */
-    box-sizing: border-box; /* Certifique-se de que padding e border não afetem a largura total */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 768px) {
     .footer-content {
-        padding: 0 20px; /* Adapte o preenchimento conforme necessário para tamanhos de tela menores */
+        padding: 0 10px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .footer-content {
-        padding: 0 10px; /* Altere o preenchimento conforme necessário para tamanhos de tela ainda menores */
+        padding: 0 10px;
     }
 }
