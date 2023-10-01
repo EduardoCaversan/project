@@ -15,7 +15,7 @@ body {
 
 .menu-logo {
     padding: 0 2em;
-    width: 4rem;
+    width: 11rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,9 +26,8 @@ body {
 
 .menu-logo span {
     color: #fff;
-    font-family: Inconsolata, monospace;
     font-size: 1.6em;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
     white-space: nowrap;
@@ -56,7 +55,7 @@ body {
 .menu a {
     text-decoration: none;
     color: white;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .menu a:hover {
@@ -80,7 +79,10 @@ body {
 /* Estilos para dispositivos móveis */
 @media only screen and (max-width: 767px) {
     .menu ul {
-        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
         flex-direction: column;
         width: 100%;
         text-align: center;
@@ -88,26 +90,26 @@ body {
         position: absolute;
         top: 50px;
         left: 0;
-        z-index: 1;
-        height: 0; /* Inicialmente, o menu tem altura 0 */
-        overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse a altura */
-        transition: height 0.7s ease-in-out; /* Adiciona uma transição suave para a propriedade display */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.55s ease-in-out;
+        width: 100%;
     }
 
     .menu.active ul {
-        height: auto;
-        display: flex;
+        max-height: 500px;
+        overflow: hidden;
     }
 
     .menu li {
         margin: 10px 0;
-        transition: margin 0.3s ease-in-out; /* Adiciona uma transição suave para a propriedade margin */
+        transition: margin 0.3s ease-in-out;
     }
 
     .menu-toggle {
         display: flex;
         z-index: 2;
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Adiciona transições suaves para as transformações e opacidade */
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     }
 
     .menu-toggle.active .bar:nth-child(1) {
@@ -122,4 +124,3 @@ body {
         transform: rotate(-45deg) translate(1px, -11.5px);
     }
 }
-

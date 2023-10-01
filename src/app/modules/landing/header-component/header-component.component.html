@@ -5,17 +5,17 @@
         <div class="bar"></div>
     </div>
 
-    <a href="#" class="menu-logo">
+    <a href="#" class="menu-logo g-0">
         <span>Eduardo</span>
     </a>
 
-    <div class="menu">
+    <div class="menu p-0">
         <ul>
-            <li><a href="#about-me">Sobre mim</a></li>
-            <li><a href="#experience">Experiência</a></li>
-            <li><a href="#education">Educação</a></li>
-            <li><a href="#" (click)="downloadResume()">Currículo</a></li>
-            <li><a [href]="'https://wa.me/' + mobileNumber + message" target="_blank">Contato</a></li>
+            <li><a href="#about-me" class="btn p-0">Sobre mim</a></li>
+            <li><a href="#experience" class="btn p-0">Experiência</a></li>
+            <li><a href="#education" class="btn p-0">Educação</a></li>
+            <li><a href="#" (click)="downloadResume()" class="btn p-0">Currículo</a></li>
+            <li><a [href]="'https://wa.me/' + mobileNumber + message" target="_blank" class="btn p-0">Contato</a></li>
         </ul>
     </div>
 </nav>
