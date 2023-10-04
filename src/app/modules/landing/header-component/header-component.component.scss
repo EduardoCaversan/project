@@ -4,7 +4,7 @@ body {
 }
 
 .menu-container {
-    background-color: #333;
+    background-color: rgba(57,62,70,.8);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -27,10 +27,11 @@ body {
 .menu-logo span {
     color: #fff;
     font-size: 1.6em;
-    font-weight: 500;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
     white-space: nowrap;
+    font-weight: bold;
+    letter-spacing: 0.25mm;
 }
 
 .menu-logo span:hover {
@@ -50,6 +51,36 @@ body {
 
 .menu li {
     margin: 0 15px;
+}
+
+.menu li:first-child::before{
+    content: "01:";
+    color: #00C6A7;
+    margin-right: 0.3rem;
+}
+
+.menu li:nth-child(2)::before{
+    content: "02:";
+    color: #00C6A7;
+    margin-right: 0.3rem;
+}
+
+.menu li:nth-child(3)::before{
+    content: "03:";
+    color: #00C6A7;
+    margin-right: 0.3rem;
+}
+
+.menu li:nth-child(4)::before{
+    content: "04:";
+    color: #00C6A7;
+    margin-right: 0.3rem;
+}
+
+.menu li:nth-child(5)::before{
+    content: "05:";
+    color: #00C6A7;
+    margin-right: 0.3rem;
 }
 
 .menu a {
@@ -76,7 +107,6 @@ body {
     transition: 0.4s;
 }
 
-/* Estilos para dispositivos móveis */
 @media only screen and (max-width: 767px) {
     .menu ul {
         list-style: none;
@@ -86,14 +116,13 @@ body {
         flex-direction: column;
         width: 100%;
         text-align: center;
-        background-color: #333;
+        background-color: rgba(57,62,70,.8);
         position: absolute;
-        top: 50px;
+        top: 58px;
         left: 0;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.55s ease-in-out;
-        width: 100%;
     }
 
     .menu.active ul {
