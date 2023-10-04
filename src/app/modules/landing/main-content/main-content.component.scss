@@ -144,8 +144,66 @@ $tab-transition: 0.3s ease-in-out;
     align-items: center;
 }
 
+.mat-fab-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.mat-fab-button svg {
+    width: 50px;
+    height: 50px;
+    color: rgba(34, 38, 42, 0.8);
+    fill: currentColor;
+    transition: all 0.2s ease;
+}
+
+.mat-fab-button:hover svg {
+    transform: scale(1.1);
+}
+
+#linkedin:hover svg {
+    color: #0e76a8;
+}
+
+#whatsapp:hover svg {
+    color: #25D366;
+}
+
+#github:hover svg {
+    color: #171515;
+}
+
+.mat-fab-button:focus {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.icon-wrapper {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.icon-wrapper span {
+    font-size: 1.25rem;
+    margin: 0.5rem 0 0;
+    color: #c8c9cb !important;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #experience {
     width: 50%;
+    max-width: 800px;
+}
+
+#contact {
+    width: 50vw;
     max-width: 800px;
 }
 
@@ -156,7 +214,7 @@ $tab-transition: 0.3s ease-in-out;
     .experience-text-container {
         width: 80%;
         flex-grow: 1;
-        animation: 0.2s ease-out 0s 1 ZoomIn;    
+        animation: 0.2s ease-out 0s 1 ZoomIn;
 
         h3 {
             color: #d0d2d5;
@@ -251,6 +309,11 @@ $tab-transition: 0.3s ease-in-out;
     }
 
     #experience {
+        width: 100%;
+        margin: 0 1rem;
+    }
+
+    #contact {
         width: 100%;
         margin: 0 1rem;
     }

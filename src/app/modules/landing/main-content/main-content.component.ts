@@ -13,6 +13,8 @@ export interface IExperience {
   styleUrls: ['./main-content.component.scss']
 })
 export class MainContentComponent {
+  public mobileNumber = '5543996369518'
+  public message = '?text=Olá! Vim através do portfólio, gostaria de entrar em contato!'
   public experiences: IExperience[] = [
     {
       company: "Adven.Tech",

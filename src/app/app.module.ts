@@ -7,6 +7,8 @@ import { HeaderComponentComponent } from './modules/landing/header-component/hea
 import { LandingComponent } from './modules/landing/landing.component';
 import { MainContentComponent } from './modules/landing/main-content/main-content.component';
 import { FooterComponentComponent } from './modules/landing/footer-component/footer-component.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { FooterComponentComponent } from './modules/landing/footer-component/foo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
