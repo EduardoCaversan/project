@@ -8,10 +8,12 @@ body {
 }
 
 footer {
-    background-color: rgba(57,62,70,.8);
+    background-color: rgba(57, 62, 70, .8);
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    position: fixed;
     bottom: 0;
     box-sizing: border-box;
     height: 60px;
