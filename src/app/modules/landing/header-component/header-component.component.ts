@@ -1,4 +1,4 @@
-import { Component, Renderer2, ElementRef } from '@angular/core';
+import { Component, Renderer2, ElementRef, Directive, HostListener } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -6,10 +6,22 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './header-component.component.html',
   styleUrls: ['./header-component.component.scss']
 })
+
 export class HeaderComponentComponent {
-  public mobileNumber = '5543996369518'
-  public message = '?text=Olá! Vim através do portfólio, gostaria de entrar em contato!'
   constructor(private renderer: Renderer2, private el: ElementRef, private http: HttpClient) { }
+
+  // private lastScrollTop = 0;
+
+  // @HostListener('window:scroll', ['$event'])
+  // onWindowScroll(event: Event): void {
+  //   const st = window.pageYOffset || document.documentElement.scrollTop;
+  //   if (st > this.lastScrollTop) {
+  //     this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateY(-100%)');
+  //   } else {
+  //     this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateY(0)');
+  //   }
+  //   this.lastScrollTop = st <= 0 ? 0 : st;
+  // }
 
   public downloadResume() {
     const resumeUrl = 'assets/docs/Curriculum (1).pdf';
@@ -24,7 +36,6 @@ export class HeaderComponentComponent {
       window.URL.revokeObjectURL(url);
     });
   }
-  
 
   public toggleMenu() {
     const menuToggle: HTMLElement | null = this.el.nativeElement.querySelector('#menu-toggle');
