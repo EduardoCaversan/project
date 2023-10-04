@@ -12,20 +12,41 @@
     flex-grow: 1;
     max-width: 60vw;
     padding-left: 5%;
+    justify-content: center;
+    min-height: 75vh;
+}
+
+.section-title {
+    font-size: 1.7rem;
+    margin: 0.5rem 0 0;
+    color: white !important;
+}
+
+.section-title span {
+    color: #00C6A7;
+    font-family: 'Inconsolata', monospace;
+    font-size: .9em;
+    margin-right: 0.3rem;
+}
+
+.text-container p {
+    font-size: 1.1rem;
 }
 
 .introduction-greeting {
     font-size: 1.1rem;
+    font-family: 'Inconsolata', monospace;
+    color: white;
 }
 
-h1 {
+.intro-text h1 {
     color: #00C6A7;
     font-size: 4rem;
     margin: 0;
     font-weight: bold;
 }
 
-h2 {
+.intro-text h2 {
     color: #c8c9cb;
     font-size: 2.2rem;
     font-weight: bold;
@@ -41,14 +62,60 @@ p {
     font-size: 1.1rem;
     max-width: 600px;
     width: 35vw;
+    color: #c8c9cb;
 }
 
-p a,
-p a:visited {
+.intro-text p a,
+.intro-text p a:visited {
     color: #00C6A7;
     display: inline-block;
     position: relative;
     text-decoration: none;
+}
+
+.about-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    padding: 100px 0;
+}
+
+#about-me {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    max-width: 1000px;
+    width: 40vw;
+    user-select: none;
+}
+
+.about-me-photo {
+    border-radius: 50%;
+    width: 300px;
+}
+
+.about-me-photo img {
+    width: 300px;
+}
+
+.about-me-photo img {
+    border-radius: 50%;
+    filter: drop-shadow(6px 6px 19px #000000);
+}
+
+.job-text {
+    color: #00C6A7;
+    -webkit-filter: saturate(.4);
+    filter: saturate(.4);
+}
+
+.about-me-photo:hover {
+    opacity: .8;
+    transition: opacity .4s ease-in-out;
 }
 
 @media only screen and (max-width: 767px) {
@@ -57,16 +124,29 @@ p a:visited {
         overflow: hidden;
     }
 
-    h1 {
+    .intro-text h1 {
         font-size: 3.5rem;
     }
 
-    h2 {
+    .intro-text h2 {
         font-size: 1.6rem;
     }
 
     p {
         max-width: 100%;
         width: 100%;
+    }
+
+    #about-me {
+        max-width: 1000px;
+        width: 70vw;
+    }
+
+    .about-me-photo {
+        width: 150px;
+    }
+
+    .about-me-photo img {
+        width: 150px;
     }
 }
