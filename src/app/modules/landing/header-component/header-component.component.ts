@@ -1,5 +1,5 @@
-import { Component, Renderer2, ElementRef, Directive, HostListener } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Component, ElementRef, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-header-component',
