@@ -15,11 +15,11 @@
 .section-title {
     font-size: 1.7rem;
     margin: 0.5rem 0 0;
-    color: white !important;
+    color: var(--text-color) !important;
 }
 
 .section-title span {
-    color: #00C6A7;
+    color: var(--accent-color);
     font-family: 'Inconsolata', monospace;
     font-size: .9em;
     margin-right: 0.3rem;
@@ -34,37 +34,37 @@
 }
 
 .experience-text-container h3 {
-    color: white;
+    color: var(--text-color);
 }
 
 .introduction-greeting {
     font-size: 1.1rem;
     font-family: 'Inconsolata', monospace;
-    color: white;
+    color: var(--text-color);
 }
 
 .intro-text h1 {
-    color: #00C6A7;
+    color: var(--accent-color);
     font-size: 4rem;
     margin: 0;
     font-weight: bold;
 }
 
 .intro-text h2 {
-    color: #c8c9cb;
+    color: var(--text-color);
     font-size: 2.2rem;
     font-weight: bold;
     margin: 0;
 }
 
 .job-title {
-    color: #00C6A7;
+    color: var(--accent-color);
     transition: all .15s ease-in-out;
 }
 
 .job-title {
     cursor: pointer;
-    color: #00C6A7;
+    color: var(--accent-color);
     transition: all 150ms ease-in-out;
 }
 
@@ -72,13 +72,13 @@ p {
     font-size: 1.1rem;
     max-width: 600px;
     width: 55vw;
-    color: #c8c9cb;
+    color: var(--text-color);
     text-align: justify;
 }
 
 .intro-text p a,
 .intro-text p a:visited {
-    color: #00C6A7;
+    color: var(--accent-color);
     display: inline-block;
     position: relative;
     text-decoration: none;
@@ -114,14 +114,7 @@ section {
 }
 
 .job-text {
-    color: #00C6A7;
-    -webkit-filter: saturate(.4);
-    filter: saturate(.4);
-}
-
-.about-me-photo:hover {
-    opacity: .8;
-    transition: opacity .4s ease-in-out;
+    color: var(--accent-color);
 }
 
 @keyframes ZoomIn {
@@ -152,8 +145,6 @@ $tab-transition: 0.3s ease-in-out;
 .mat-fab-button svg {
     width: 50px;
     height: 50px;
-    color: rgba(34, 38, 42, 0.8);
-    fill: currentColor;
     transition: all 0.2s ease;
 }
 
@@ -161,16 +152,16 @@ $tab-transition: 0.3s ease-in-out;
     transform: scale(1.1);
 }
 
-#linkedin:hover svg {
+#linkedin svg {
     color: #0e76a8;
 }
 
-#whatsapp:hover svg {
+#whatsapp svg {
     color: #25D366;
 }
 
-#github:hover svg {
-    color: #171515;
+#github svg {
+    color: var(--accent-color);
 }
 
 .mat-fab-button:focus {
@@ -186,7 +177,7 @@ $tab-transition: 0.3s ease-in-out;
 .icon-wrapper span {
     font-size: 1.25rem;
     margin: 0.5rem 0 0;
-    color: #c8c9cb !important;
+    color: var(--text-color) !important;
 }
 
 .contact-wrapper {
@@ -215,7 +206,7 @@ $tab-transition: 0.3s ease-in-out;
         animation: 0.2s ease-out 0s 1 ZoomIn;
 
         h3 {
-            color: #d0d2d5;
+            color: var(--text-color);
             font-weight: 700;
             margin: 0;
             max-width: 400px;
@@ -226,19 +217,19 @@ $tab-transition: 0.3s ease-in-out;
             margin-top: 0.5rem !important;
             font-size: 1rem;
             font-family: "Inconsolata", monospace;
-            color: #00C6A7;
+            color: var(--accent-color);
             margin: 0;
         }
 
         p::before {
             content: "⋄";
             margin-right: 0.5rem;
-            color: #00C6A7;
+            color: var(--accent-color);
         }
 
         p>b,
         strong {
-            color: #d0d2d5;
+            color: var(--text-color);
         }
     }
 }
@@ -250,7 +241,7 @@ $tab-transition: 0.3s ease-in-out;
 
     .tab {
         padding: 0.5rem;
-        color: #a8aaad;
+        color: var(--text-color);
         font-size: 0.9rem;
         font-weight: 400;
         cursor: pointer;
@@ -263,14 +254,14 @@ $tab-transition: 0.3s ease-in-out;
 
     .tab.active,
     .tab:hover {
-        color: #fff;
+        color: var(--text-color);
         font-weight: 600;
         transition: all $tab-transition;
     }
 
     .tab.tab.active {
         background-color: rgba(57, 62, 70, .8);
-        border-right: 2px solid #00C6A7;
+        border-right: 2px solid var(--accent-color);
         transition: all $tab-transition;
     }
 }

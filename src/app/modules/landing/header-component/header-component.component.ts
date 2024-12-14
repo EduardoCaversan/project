@@ -10,27 +10,14 @@ import { HttpClient } from '@angular/common/http';
 export class HeaderComponentComponent {
   constructor(private renderer: Renderer2, private el: ElementRef, private http: HttpClient) { }
 
-  // private lastScrollTop = 0;
-
-  // @HostListener('window:scroll', ['$event'])
-  // onWindowScroll(event: Event): void {
-  //   const st = window.pageYOffset || document.documentElement.scrollTop;
-  //   if (st > this.lastScrollTop) {
-  //     this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateY(-100%)');
-  //   } else {
-  //     this.renderer.setStyle(this.el.nativeElement, 'transform', 'translateY(0)');
-  //   }
-  //   this.lastScrollTop = st <= 0 ? 0 : st;
-  // }
-
   public downloadResume() {
-    const resumeUrl = 'assets/docs/Curriculum (1).pdf';
+    const resumeUrl = 'assets/docs/Curriculo Atualizado 2024.pdf';
     this.http.get(resumeUrl, { responseType: 'arraybuffer' }).subscribe((data: ArrayBuffer) => {
       const blob = new Blob([data], { type: 'application/pdf' });
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'Curriculum.pdf';
+      a.download = 'Curriculo Eduardo Caversan.pdf';
       document.body.appendChild(a);
       a.click();
       window.URL.revokeObjectURL(url);
